@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tourismo — Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">🌿</span>
+        <span class="brand-text">Tourismo</span>
+      </a>
+
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Travel thoughtfully. Explore beautifully.</h1>
+          <p class="lead">Curated trips for students & explorers — plan, compare and book with friendly guidance.</p>
+          <p class="hero-ctas">
+            <a class="btn btn-primary" href="destinations.html">Browse Destinations</a>
+            <a class="btn btn-outline" href="booking.html">Quick Book</a>
+          </p>
+        </div>
+
+        <div class="hero-card" aria-hidden="false">
+          <h3>Quick Search</h3>
+          <form action="destinations.html" method="get" class="search-form" id="quickSearch">
+            <label>
+              <span class="label">Where to?</span>
+              <input name="q" placeholder="e.g., Dubai, Maldives" />
+            </label>
+            <div class="row">
+              <label>
+                <span class="label">From</span>
+                <input type="date" name="from" />
+              </label>
+              <label>
+                <span class="label">To</span>
+                <input type="date" name="to" />
+              </label>
+            </div>
+            <label>
+              <span class="label">Travelers</span>
+              <input type="number" name="guests" min="1" value="2" />
+            </label>
+            <button class="btn btn-primary w-full" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <header class="section-head">
+        <h2>Top Picks</h2>
+        <p class="muted">Handpicked destinations — beautiful photos, honest info, student budgets in mind.</p>
+      </header>
+
+      <div class="grid cards-grid">
+        <article class="card">
+          <img src="https://www.visitdubai.com/-/media/gathercontent/poi/b/burj-khalifa/fallback-image/poi-burj-khalifa-3-dtcm-jun-2023.jpg" alt="Burj Khalifa, Dubai">
+          <div class="card-body">
+            <h3>Dubai</h3>
+            <p>Luxury skyline, desert experiences and modern wonders.</p>
+            <a class="link" href="destinations.html#dubai">Explore →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwtCiaAYE4a7x8bX7kdGfk1XVwA35dCr_NUw&s" alt="Maldives">
+          <div class="card-body">
+            <h3>Maldives</h3>
+            <p>Crystal waters, overwater villas and island calm.</p>
+            <a class="link" href="destinations.html#maldives">Explore →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiWYgV9CfZv89N6uRL-obC8L4XEAPgBJ4yMg&s" alt="Colosseum, Rome">
+          <div class="card-body">
+            <h3>Rome</h3>
+            <p>History, architecture and delicious food lanes.</p>
+            <a class="link" href="destinations.html#rome">Explore →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section alt">
+      <header class="section-head">
+        <h2>More Destinations</h2>
+        <p class="muted">Discover colorful culture, coastlines and city life.</p>
+      </header>
+
+      <div class="grid cards-grid">
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrxvduC2MU0RM1I9nVs0z9iGi4BrT6EcAMLg&s" alt="Turkey">
+          <div class="card-body">
+            <h3>Turkey</h3>
+            <p>History, bazaars, and unique landscapes.</p>
+            <a class="link" href="destinations.html#turkey">Explore →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyLPE9Q5oRQ2NHdvS2iKwgYQ_tA_6IqhwoNA&s" alt="Japan">
+          <div class="card-body">
+            <h3>Japan</h3>
+            <p>Tradition meets modern – temples, tech and tasty street food.</p>
+            <a class="link" href="destinations.html#japan">Explore →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJZxnPqkLXxxaccrgnC1qmFXx-GyIro4P2A&s" alt="Korea">
+          <div class="card-body">
+            <h3>Korea</h3>
+            <p>Vibrant cities, food culture and K-pop energy.</p>
+            <a class="link" href="destinations.html#korea">Explore →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container cta-strip">
+      <div>
+        <h3>Ready to plan your next trip?</h3>
+        <p class="muted">We make travel easy—fast booking, clear pricing and friendly help.</p>
+      </div>
+      <div>
+        <a class="btn btn-primary" href="booking.html">Start Booking</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year"></span> Tourismo — College Project</div>
+      <nav>
+        <a href="about.html">About</a> · <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
