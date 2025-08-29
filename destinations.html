@@ -1,0 +1,110 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Destinations — Tourismo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">🌿</span><span class="brand-text">Tourismo</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle2" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <ul class="nav-list" id="navList2">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="destinations.html">Destinations</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <header class="section-head">
+        <h2>All Destinations</h2>
+        <p class="muted">Filter and pick your perfect getaway.</p>
+      </header>
+
+      <div class="filters">
+        <input id="filterSearch" placeholder="Search destinations..." />
+        <select id="filterType">
+          <option value="">All types</option>
+          <option value="beach">Beach</option>
+          <option value="city">City</option>
+          <option value="heritage">Heritage</option>
+        </select>
+      </div>
+
+      <div id="destGrid" class="grid cards-grid">
+        <!-- Cards populated by JS fallback; initial static fallback included -->
+        <article class="card" id="dubai">
+          <img src="https://www.visitdubai.com/-/media/gathercontent/poi/b/burj-khalifa/fallback-image/poi-burj-khalifa-3-dtcm-jun-2023.jpg" alt="Dubai">
+          <div class="card-body">
+            <h3>Dubai</h3>
+            <p>City of skyscrapers, shopping, and desert fun.</p>
+            <a class="link" href="booking.html?dest=Dubai">Book →</a>
+          </div>
+        </article>
+
+        <article class="card" id="maldives">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwtCiaAYE4a7x8bX7kdGfk1XVwA35dCr_NUw&s" alt="Maldives">
+          <div class="card-body">
+            <h3>Maldives</h3>
+            <p>Turquoise waters and relaxing island stays.</p>
+            <a class="link" href="booking.html?dest=Maldives">Book →</a>
+          </div>
+        </article>
+
+        <article class="card" id="rome">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiWYgV9CfZv89N6uRL-obC8L4XEAPgBJ4yMg&s" alt="Rome">
+          <div class="card-body">
+            <h3>Rome</h3>
+            <p>Ancient ruins, piazzas and amazing food.</p>
+            <a class="link" href="booking.html?dest=Rome">Book →</a>
+          </div>
+        </article>
+
+        <article class="card" id="turkey">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrxvduC2MU0RM1I9nVs0z9iGi4BrT6EcAMLg&s" alt="Turkey">
+          <div class="card-body">
+            <h3>Turkey</h3>
+            <p>Markets, culture and dramatic landscapes.</p>
+            <a class="link" href="booking.html?dest=Turkey">Book →</a>
+          </div>
+        </article>
+
+        <article class="card" id="japan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyLPE9Q5oRQ2NHdvS2iKwgYQ_tA_6IqhwoNA&s" alt="Japan">
+          <div class="card-body">
+            <h3>Japan</h3>
+            <p>Temples, tech, and beautiful seasons.</p>
+            <a class="link" href="booking.html?dest=Japan">Book →</a>
+          </div>
+        </article>
+
+        <article class="card" id="korea">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJZxnPqkLXxxaccrgnC1qmFXx-GyIro4P2A&s" alt="Korea">
+          <div class="card-body">
+            <h3>Korea</h3>
+            <p>Food streets, pop culture and city energy.</p>
+            <a class="link" href="booking.html?dest=Korea">Book →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year2"></span> Tourismo</div>
+      <nav><a href="index.html">Home</a> · <a href="contact.html">Contact</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
