@@ -1,0 +1,87 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking — Tourismo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">🌿</span><span class="brand-text">Tourismo</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle3" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <ul class="nav-list" id="navList3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a class="active" href="booking.html">Booking</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <header class="section-head">
+        <h2>Book Your Trip</h2>
+        <p class="muted">Fill in your details and we will prepare a custom plan for you.</p>
+      </header>
+
+      <form id="bookingForm" class="form-card" novalidate>
+        <div class="form-grid">
+          <label>
+            <span class="label">Full name</span>
+            <input type="text" name="name" required placeholder="Your full name">
+          </label>
+
+          <label>
+            <span class="label">Email</span>
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+
+          <label>
+            <span class="label">Destination</span>
+            <input type="text" name="destination" id="destinationInput" placeholder="e.g., Dubai" required>
+          </label>
+
+          <label>
+            <span class="label">Budget (₹)</span>
+            <input type="number" name="budget" min="0" placeholder="e.g., 25000" required>
+          </label>
+
+          <label>
+            <span class="label">Start date</span>
+            <input type="date" name="start" required>
+          </label>
+
+          <label>
+            <span class="label">End date</span>
+            <input type="date" name="end" required>
+          </label>
+
+          <label class="full">
+            <span class="label">Notes</span>
+            <textarea name="notes" rows="4" placeholder="Any preferences or dietary notes"></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Submit Booking</button>
+          <button class="btn btn-outline" type="button" id="clearBooking">Clear</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year3"></span> Tourismo</div>
+      <nav><a href="index.html">Home</a> · <a href="destinations.html">Destinations</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
